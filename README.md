@@ -8,6 +8,9 @@ A simple bash script that checks passwords against the HaveIBeenPwned API and te
 
 ## Usage
 `./passwordpwn.sh`
-  Enter a password when prompted.
-  It will print the number of times that the password has been seen in HaveIBeenPwned's dataset.
-  If it prints nothing, no match was found and the password has not been seen in the dataset.
+
+Enter a password when prompted.
+
+It will print the number of times that the password has been seen in HaveIBeenPwned's dataset.
+
+If it prints nothing, no match was found and the password has not been seen in the dataset. *This does not make it a good password!* It just means it hasn't been seen in the dataset.

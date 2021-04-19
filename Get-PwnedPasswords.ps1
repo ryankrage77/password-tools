@@ -15,6 +15,6 @@ $Request = Invoke-RestMethod -URI "https://api.pwnedpasswords.com/range/$Prefix"
 $Data = $Request -split [Environment]::NewLine | ForEach-Object { $_ | ConvertFrom-String -Delimiter ":" -PropertyNames Hash,Count }
 $Output = $Data | Where-Object Hash -eq $Suffix
 if (-NOT $Output) {
-  return "Your password ($UPassword`:$Hash) has not been found."
+  return "Your password has not been found."
 }
-return "Your password ($UPassword`:$Hash) has been found $($Output.Count.ToString('N0')) times."
+return "Your password has been found $($Output.Count.ToString('N0')) times."

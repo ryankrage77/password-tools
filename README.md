@@ -1,16 +1,19 @@
-# passwordpwn
+#Password Tools
+A collection of scripts & other tools I use relating to passwords.
+
+## passwordpwn
 A simple script that checks passwords against the HaveIBeenPwned API and tells you how many times that password appears in HaveIBeenPwned's dataset.
   If it's a high number, the password is in common use and will likely be vulnerable to dictionary/brute-force attacks, and should not be used.  
   Thanks to [natfan](https://github.com/Natfan) there's a powershell version too. Thanks natfan!
 
-## Setup (bash version)
+### Setup (bash version)
 `curl "https://raw.githubusercontent.com/ryankrage77/passwordpwn.sh/master/passwordpwn.sh" > passwordpwn.sh`  
 OR  
 `wget "https://raw.githubusercontent.com/ryankrage77/passwordpwn.sh/master/passwordpwn.sh"`
 
 `chmod +x passwordpwn.sh`
 
-## Usage (bash version)
+### Usage (bash version)
 `./passwordpwn.sh`
 
 Enter a password when prompted.
